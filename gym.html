@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife Gym Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif; }
+    body { line-height: 1.6; color:#333; }
+
+    a { text-decoration: none; color: inherit; }
+    header { background:#007BFF; color:#fff; padding:60px 20px; text-align:center; }
+    header h1 { font-size:2.5rem; margin-bottom:10px; }
+    header p { font-size:1.2rem; margin-bottom:20px; }
+    header .btn { background:#fff; color:#007BFF; padding:10px 20px; border-radius:5px; font-weight:bold; transition:0.3s; }
+    header .btn:hover { background:#e6e6e6; }
+
+    section { padding:60px 20px; max-width:1000px; margin:auto; }
+
+    #about { display:flex; flex-wrap:wrap; gap:20px; align-items:center; }
+    #about img { width:300px; border-radius:10px; }
+    #about div { flex:1; }
+
+    #services { text-align:center; }
+    .services-container { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .service { background:#fff; padding:20px; border-radius:10px; width:280px; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+    .service h3 { margin-bottom:10px; color:#007BFF; }
+
+    #contact form { display:flex; flex-direction:column; gap:15px; max-width:500px; margin:auto; }
+    #contact input, #contact textarea { padding:10px; border-radius:5px; border:1px solid #ccc; width:100%; }
+    #contact button { background:#007BFF; color:#fff; padding:10px; border:none; border-radius:5px; font-weight:bold; cursor:pointer; }
+    #contact button:hover { background:#0056b3; }
+
+    footer { text-align:center; padding:20px; background:#333; color:#fff; }
+
+    @media(max-width:768px) {
+      #about { flex-direction:column; text-align:center; }
+      header h1 { font-size:2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>FitLife Gym</h1>
+    <p>Transform your body. Achieve your fitness goals.</p>
+    <a href="#contact" class="btn">Join Now</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <img src="images/gym.jpg" alt="Gym Image">
+    <div>
+      <h2>About FitLife Gym</h2>
+      <p>At FitLife Gym, we provide state-of-the-art equipment, professional trainers, and personalized programs to help you achieve your fitness goals. Whether you want to build strength, lose weight, or stay healthy, we are here to guide you every step of the way.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service">
+        <h3>Personal Training</h3>
+        <p>One-on-one training sessions with professional coaches tailored to your goals.</p>
+      </div>
+      <div class="service">
+        <h3>Group Classes</h3>
+        <p>Fun and motivating group sessions including yoga, cardio, and strength training.</p>
+      </div>
+      <div class="service">
+        <h3>Nutrition Plans</h3>
+        <p>Customized meal plans designed by certified nutritionists to complement your workouts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="text-align:center; margin-top:15px;">Or email us at <a href="mailto:info@fitlifegym.com">info@fitlifegym.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 FitLife Gym. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
